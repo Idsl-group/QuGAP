@@ -1,16 +1,55 @@
 # QuGAP: Generating Universal Adversarial Perturbations for Quantum Classifiers
 
-### Code Base
-The entire code base consists of the following folders:
+Repository containing all the source code used for the paper *Generating Universal Adversarial Perturbations for Quantum Classifiers*. Work done by [Gautham Govind Anil](https://github.com/blaze010) and [Vishnu Vinod](https://github.com/vishnuvind) while at the University of British Columbia.
 
-- `data/`     : contains datasets for XOR and Transverse Ising Model (TIM) Dataset (MNIST & FMNIST auto-downloaded - please ensure your device has an internet connection to allow download of MNIST/FMNIST datasets)
-- `targets/`  : contains trained target models (we provide a number of such models)
-- `uaps/`     : contains trained untargeted UAPs for testing (we provide UAPs with $\epsilon=0.15$ & $\epsilon=0.30$)
-- `results/`  : stores all results from training and testing in pickled files
-- `logs/`     : stores all logs from training and testing in log files
-- `scripts/`  : has 6 bash scripts for running different tasks
+## Paper
+*<u>Title</u>*: Generating Universal Adversarial Perturbations for Quantum Classifiers\
+*<u>Conference</u>*: [The 38th Annual AAAI Conference on Artificial Intelligence](https://aaai.org/aaai-conference/), February 20-27, 2024\
+*Link to Paper (with supplementary material)*: To be released
+
+## Code Base
+Folder structure of the Project Directory is given below
+```
+    ├── data            [datasets for XOR and Transverse Ising Model (TIM) classification tasks]
+    │   ├── ising
+    │   │   ├── 2       [2 qubit data]
+    |   |   │   └── ...     (2 files: train and test)
+    │   │   └── 4       [4 qubit data]
+    |   |       └── ... (2 files: train and test)
+    │   ├── xor
+    │   │   └── ...     (2 files: train and test)
+    │   └── dataset.py  [Code to generate datasets]
+    ├── logs            [Directory to store all logs]
+    │   └── ...         (empty)
+    ├── results         [Directory to store all results]
+    │   └── ...         (empty)
+    ├── scripts         [Bash scripts for running different tasks (detailed later)]
+    │   ├── test_cgen.sh
+    │   ├── train_cgen.sh
+    │   ├── train_qbim.sh
+    │   ├── train_qgen.sh
+    │   ├── train_target.sh
+    │   └── train_unitary.sh
+    ├── targets         [Trained Target models (classical and PQC-based classifiers)]
+    │   └── ...         (18 files)
+    ├── uaps            [Trained untargeted additive UAPs for testing (we provide UAPs with strengths 0.15 & 0.30)]
+    │   └── ...         (30 files)
+    ├── LICENSE
+    ├── README.md
+    ├── config.py
+    ├── models.py
+    ├── qmodels.py
+    ├── requirements.txt
+    ├── test_cgen.sh
+    ├── train_cgen.sh
+    ├── train_qbim.sh
+    ├── train_qgen.sh
+    ├── train_target.sh
+    ├── train_unitary.sh
+    └── utils.py
+```
             
-### Supported Tasks
+## Supported Tasks
 We support testing for the following classification tasks:
 - MNIST/FMNIST - 2 class - $16\times16$
 - MNIST/FMNIST - 4 class - $16\times16$
@@ -27,9 +66,10 @@ The `config.py` contains $4$ different configurations each for a separate test s
 - Setting 3: MNIST/FMNIST $16\times16$ - 2-class classification - 9 qubits, 1 ancillary qubit
 - Setting 4: MNIST/FMNIST $16\times16$ - 4-class classification - 10 qubits, 2 ancillary qubits
 
+### Computational Requirements
 This is necessary because quantum devices have to be initialized with a fixed number of wires. The code is structured in such a way. Kindly note that **CUDA devices are required in order to read the pickled files**. Please test on machines which have **CUDA enabled devices and a RAM of atleast $20$ GB** in order to allow flawless execution.
 
-### Python Scripts
+## Python Scripts
 
 **Please run all python scripts from within the `scripts/` folder**
 
