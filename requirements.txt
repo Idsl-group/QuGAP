@@ -1,0 +1,7 @@
+easydict
+numpy<1.24
+pandas
+PennyLane
+torch
+torchvision
+tqdm
