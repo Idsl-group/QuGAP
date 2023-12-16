@@ -4,6 +4,7 @@ Repository containing all the source code used for the paper *Generating Univers
 
 ## Paper
 *<u>Title</u>*: Generating Universal Adversarial Perturbations for Quantum Classifiers\
+*<u>Authors</u>*: Gautham Govind Anil, Vishnu Vinod and Apurva Narayan\
 *<u>Conference</u>*: [The 38th Annual AAAI Conference on Artificial Intelligence](https://aaai.org/aaai-conference/), February 20-27, 2024\
 *Link to Paper (with supplementary material)*: To be released
 
