@@ -84,3 +84,18 @@ General code for running any of the scripts is given as ```bash script_file_name
 6. `train_qgen.sh`: Code to train and test QuGAP-U algorithm
 
 Further comments can be found inside each `.sh` file to aid in modifying, testing and playing around with the settings of each task.
+
+## Citation
+
+If you use the work presented in the paper or the code hosted in this repository, please consider citing our paper at:
+
+```
+@misc{anil2024generating,
+      title={Generating Universal Adversarial Perturbations for Quantum Classifiers}, 
+      author={Gautham Anil and Vishnu Vinod and Apurva Narayan},
+      year={2024},
+      eprint={2402.08648},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
