@@ -7,6 +7,7 @@ Repository containing all the source code used for the paper *Generating Univers
 *<u>Authors</u>*: Gautham Govind Anil, Vishnu Vinod and Apurva Narayan\
 *<u>Conference</u>*: [The 38th Annual AAAI Conference on Artificial Intelligence](https://aaai.org/aaai-conference/), February 20-27, 2024\
 *Link to Paper (with supplementary material)*: [Here](https://arxiv.org/abs/2402.08648)
+*AAAI Proceedings (Main Paper only)*: [Here](https://ojs.aaai.org/index.php/AAAI/article/view/28963)
 
 ## Code Base
 Folder structure of the Project Directory is given below
@@ -90,12 +91,17 @@ Further comments can be found inside each `.sh` file to aid in modifying, testin
 If you use the work presented in the paper or the code hosted in this repository, please consider citing our paper at:
 
 ```
-@misc{anil2024generating,
-      title={Generating Universal Adversarial Perturbations for Quantum Classifiers}, 
-      author={Gautham Anil and Vishnu Vinod and Apurva Narayan},
-      year={2024},
-      eprint={2402.08648},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@article{
+    Anil_Vinod_Narayan_2024, 
+    title={Generating Universal Adversarial Perturbations for Quantum Classifiers}, 
+    author={Anil, Gautham and Vinod, Vishnu and Narayan, Apurva}, 
+    volume={38}, 
+    url={https://ojs.aaai.org/index.php/AAAI/article/view/28963}, 
+    DOI={10.1609/aaai.v38i10.28963}, 
+    number={10}, 
+    journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+    year={2024}, 
+    month={Mar.}, 
+    pages={10891-10899}
 }
 ```
